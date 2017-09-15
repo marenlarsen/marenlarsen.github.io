@@ -1,0 +1,58 @@
+$accentColor: rgba(255, 217, 102, 1);
+@mixin hover-state {
+  &:hover, &:active, &:focus {
+    @content;
+  }
+}
+
+header {
+  background-color: #222;
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 0;
+      border-bottom: 1px solid #555;
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center;
+        @include hover-state {
+          background-color: #555;
+          color: #fff;
+        }
+        .active {
+          background-color: $accentColor;
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+#headshot {
+  border-radius: 100%;
+}
+
+//--- Responsive mixins ---//
+/* All responsive mixins called in media-queries.scss */
+
+@mixin header-md() {
+  #navToggle {
+    display: none;
+  }
+  header {
+    li {
+      display: inline;
+    }
+  }
+}

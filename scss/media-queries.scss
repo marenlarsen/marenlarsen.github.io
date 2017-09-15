@@ -1,0 +1,28 @@
+//--- Media Query Mixins ---//
+
+@import "custom.scss";
+
+/* Phablet (sm) */
+@media (min-width: 400px) {
+  /* no styles yet */
+}
+
+/*Tablet (md) */
+@media (min-width: 550px) {
+  @include header-md();
+}
+
+/* Desktop (lg) */
+@media (min-width: 750px) {
+  /* no styles yet */
+}
+
+/* Desktop HD (xlg) */
+@media (min-width: 1000px) {
+  /* no styles yet */
+}
+
+// Really big (mega) //
+@media (min-width: 1200px) {
+
+}

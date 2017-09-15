@@ -1,0 +1,48 @@
+header {
+  background-color: #222; }
+  header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem; }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    header ul li {
+      margin-bottom: 0;
+      border-bottom: 1px solid #555; }
+      header ul li:last-child {
+        border-bottom: none; }
+      header ul li a {
+        display: block;
+        padding: 1rem 2rem;
+        text-align: center; }
+        header ul li a:hover, header ul li a:active, header ul li a:focus {
+          background-color: #555;
+          color: #fff; }
+        header ul li a .active {
+          background-color: #ffd966;
+          color: #555; }
+
+#headshot {
+  border-radius: 100%; }
+
+/* All responsive mixins called in media-queries.scss */
+/* Phablet (sm) */
+@media (min-width: 400px) {
+  /* no styles yet */ }
+/*Tablet (md) */
+@media (min-width: 550px) {
+  #navToggle {
+    display: none; }
+
+  header li {
+    display: inline; } }
+/* Desktop (lg) */
+@media (min-width: 750px) {
+  /* no styles yet */ }
+/* Desktop HD (xlg) */
+@media (min-width: 1000px) {
+  /* no styles yet */ }
+
+/*# sourceMappingURL=custom.css.map */
