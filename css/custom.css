@@ -1,26 +1,40 @@
 header {
-  background-color: #222; }
+  background-color: #222;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
   header a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.8rem; }
-  header ul {
+    font-size: 1.8rem;
+    padding: 1rem 2rem; }
+    header a:hover, header a:active, header a:focus {
+      color: #ffd966; }
+  header .logo {
+    font-weight: 600;
+    float: left;
+    display: block; }
+  header #navToggle {
+    float: right; }
+  header nav ul {
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    header ul li {
+    header nav ul li {
       margin-bottom: 0;
       border-bottom: 1px solid #555; }
-      header ul li:last-child {
+      header nav ul li:last-child {
         border-bottom: none; }
-      header ul li a {
+      header nav ul li a {
         display: block;
-        padding: 1rem 2rem;
         text-align: center; }
-        header ul li a:hover, header ul li a:active, header ul li a:focus {
+        header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus {
           background-color: #555;
           color: #fff; }
-        header ul li a .active {
+        header nav ul li a .active {
           background-color: #ffd966;
           color: #555; }
 
@@ -36,8 +50,10 @@ header {
   #navToggle {
     display: none; }
 
-  header li {
-    display: inline; } }
+  header nav ul {
+    display: block; }
+    header nav ul li {
+      float: right; } }
 /* Desktop (lg) */
 @media (min-width: 750px) {
   /* no styles yet */ }

@@ -7,32 +7,51 @@ $accentColor: rgba(255, 217, 102, 1);
 
 header {
   background-color: #222;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   a {
     text-decoration: none;
     color: #fff;
     font-size: 1.8rem;
+    padding: 1rem 2rem;
+    @include hover-state {
+      color: $accentColor;
+    }
   }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li {
-      margin-bottom: 0;
-      border-bottom: 1px solid #555;
-      &:last-child {
-        border-bottom: none;
-      }
-      a {
-        display: block;
-        padding: 1rem 2rem;
-        text-align: center;
-        @include hover-state {
-          background-color: #555;
-          color: #fff;
+  .logo {
+    font-weight: 600;
+    float: left;
+    display: block;
+  }
+  #navToggle {
+    float: right;
+  }
+  nav {
+    ul {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-bottom: 0;
+        border-bottom: 1px solid #555;
+        &:last-child {
+          border-bottom: none;
         }
-        .active {
-          background-color: $accentColor;
-          color: #555;
+        a {
+          display: block;
+          text-align: center;
+          @include hover-state {
+            background-color: #555;
+            color: #fff;
+          }
+          .active {
+            background-color: $accentColor;
+            color: #555;
+          }
         }
       }
     }
@@ -51,8 +70,13 @@ header {
     display: none;
   }
   header {
-    li {
-      display: inline;
+    nav {
+      ul {
+        display: block;
+        li {
+          float: right;
+        }
+      }
     }
   }
 }
