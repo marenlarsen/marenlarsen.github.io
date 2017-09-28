@@ -10,51 +10,52 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 100;
-  a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.8rem;
-    padding: 1rem 2rem;
-    @include hover-state {
-      color: $accentColor;
-    }
-  }
-  .logo {
-    font-weight: 600;
-    float: left;
-    display: block;
-  }
-  #navToggle {
-    float: right;
-  }
+  z-index: 1;
   nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      padding: 1rem;
+      @include hover-state {
+        color: $accentColor;
+      }
+    }
+    .logo {
+      font-weight: 600;
+    }
     ul {
-      display: none;
+      display: -webkit-flex;
+      display: flex;
       list-style-type: none;
       margin: 0;
       padding: 0;
+      width: 100%;
       li {
-        margin-bottom: 0;
-        border-bottom: 1px solid #555;
-        &:last-child {
-          border-bottom: none;
+        margin: 0;
+        flex-grow: 1;
+      }
+      a {
+        display: block;
+        text-align: center;
+        @include hover-state {
+          background-color: #555;
+          color: #fff;
         }
-        a {
-          display: block;
-          text-align: center;
-          @include hover-state {
-            background-color: #555;
-            color: #fff;
-          }
-          .active {
-            background-color: $accentColor;
-            color: #555;
-          }
+        .active {
+          background-color: $accentColor;
+          color: #555;
         }
       }
     }
+  }
+  & + .container {
+    margin-top: 12rem;
   }
 }
 
@@ -65,17 +66,15 @@ header {
 //--- Responsive mixins ---//
 /* All responsive mixins called in media-queries.scss */
 
-@mixin header-md() {
-  #navToggle {
-    display: none;
-  }
+@mixin header-lg() {
   header {
     nav {
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       ul {
-        display: block;
-        li {
-          float: right;
-        }
+        width: auto;
       }
     }
   }
