@@ -3,7 +3,8 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  border-top: 0.4em solid #ffd966; }
   header nav {
     display: -webkit-flex;
     display: flex;
@@ -18,7 +19,8 @@ header {
       header nav a:hover, header nav a:active, header nav a:focus {
         color: #ffd966; }
     header nav .logo {
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 2.2rem; }
     header nav ul {
       display: -webkit-flex;
       display: flex;
@@ -33,18 +35,17 @@ header {
         display: block;
         text-align: center; }
         header nav ul a:hover, header nav ul a:active, header nav ul a:focus {
-          background-color: #555;
+          background-color: #3c3c3c;
           color: #fff; }
-        header nav ul a .active {
-          background-color: #ffd966;
-          color: #555; }
+      header nav ul .active {
+        border-bottom: 0.2em solid #ffd966;
+        color: #ffd966; }
   header + .container {
-    margin-top: 12rem; }
+    margin-top: 15rem; }
 
 #headshot {
   border-radius: 100%; }
 
-/* All responsive mixins called in media-queries.scss */
 /* Phablet (sm) */
 @media (min-width: 400px) {
   /* no styles yet */ }
@@ -64,4 +65,4 @@ header {
 @media (min-width: 1000px) {
   /* no styles yet */ }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=index.css.map */

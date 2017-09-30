@@ -1,9 +1,4 @@
-$accentColor: rgba(255, 217, 102, 1);
-@mixin hover-state {
-  &:hover, &:active, &:focus {
-    @content;
-  }
-}
+@import 'common';
 
 header {
   background-color: #222;
@@ -44,27 +39,18 @@ header {
         display: block;
         text-align: center;
         @include hover-state {
-          background-color: #555;
+          background-color: lighten(#222, 10%);
           color: #fff;
         }
-        .active {
-          background-color: $accentColor;
-          color: #555;
-        }
+      }
+      .active {
       }
     }
   }
   & + .container {
-    margin-top: 12rem;
+    margin-top: 15rem;
   }
 }
-
-#headshot {
-  border-radius: 100%;
-}
-
-//--- Responsive mixins ---//
-/* All responsive mixins called in media-queries.scss */
 
 @mixin header-lg() {
   header {
