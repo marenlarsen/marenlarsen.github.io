@@ -43,7 +43,9 @@ header {
     margin-top: 15rem; }
 
 #headshot {
-  border-radius: 100%; }
+  border-radius: 100%;
+  padding: 0.6rem;
+  border: 0.6rem solid #ffd966; }
 
 /* Phablet (sm) */
 @media (min-width: 400px) {
