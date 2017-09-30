@@ -1,7 +1,18 @@
-$accentColor: rgba(255, 217, 102, 1);
+/* Utilities */
 @mixin hover-state {
   &:hover, &:active, &:focus {
     @content;
   }
 }
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800');
+
+@mixin typography($size, $height, $space) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $space;
+}
+
+/* Colors */
+$yellow: #ffd966;
+$blue-lt: #33c3f0;
+$blue-md: #1eaedb;
+$blue-dk: #0fa0ce;

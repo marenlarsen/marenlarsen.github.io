@@ -1,7 +1,26 @@
 @import 'header';
 
+#hero {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 #headshot {
-  border-radius: 100%;
-  padding: 0.6rem;
-  border: 0.6rem solid $accentColor;
+  width: 50%;
+  img {
+    width: 100%;
+    border-radius: 100%;
+    padding: 0.6rem;
+    border: 0.6rem solid $yellow;
+  }
+}
+
+#intro-headings {
+  width: 50%;
+  h1 {
+    font-size: 3.0rem;
+    text-align: right;
+  }
 }

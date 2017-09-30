@@ -6,7 +6,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
-  border-top: 0.4em solid $accentColor;
+  border-top: 0.4em solid $yellow;
   nav {
     display: -webkit-flex;
     display: flex;
@@ -19,7 +19,7 @@ header {
       font-size: 1.8rem;
       padding: 1rem;
       @include hover-state {
-        color: $accentColor;
+        color: $yellow;
       }
     }
     .logo {
@@ -45,8 +45,8 @@ header {
         }
       }
       .active {
-        border-bottom: 0.2em solid $accentColor;
-        color: $accentColor;
+        border-bottom: 0.2em solid $yellow;
+        color: $yellow;
       }
     }
   }
@@ -55,7 +55,7 @@ header {
   }
 }
 
-@mixin header-lg() {
+@media (min-width: 550px) {
   header {
     nav {
       -webkit-flex-direction: row;
@@ -65,6 +65,9 @@ header {
       ul {
         width: auto;
       }
+    }
+    & + .container {
+      margin-top: 10rem;
     }
   }
 }

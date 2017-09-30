@@ -4,4 +4,3 @@ Personal website and portfolio developed by [Kevin Jablonowski](https://katzmeow
 
 ## Thanks
 - [Normalize CSS](https://github.com/necolas/normalize.css)
-- [Skeleton CSS boilerplate](https://github.com/dhg/Skeleton)
