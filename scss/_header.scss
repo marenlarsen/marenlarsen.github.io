@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
+  border-top: 0.4em solid $accentColor;
   nav {
     display: -webkit-flex;
     display: flex;
@@ -23,6 +24,7 @@ header {
     }
     .logo {
       font-weight: 600;
+      font-size: 2.2rem;
     }
     ul {
       display: -webkit-flex;
@@ -40,10 +42,11 @@ header {
         text-align: center;
         @include hover-state {
           background-color: lighten(#222, 10%);
-          color: #fff;
         }
       }
       .active {
+        border-bottom: 0.2em solid $accentColor;
+        color: $accentColor;
       }
     }
   }
