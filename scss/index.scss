@@ -1,7 +1,7 @@
 @import 'header';
 
 .hero {
-  background-image: linear-gradient($yellow, $yellow), url('../img/maren_headshot.jpg');
+  background-image: linear-gradient($yellow, $red-dk), url('../img/maren_headshot.jpg');
   background-size: cover;
   background-blend-mode: multiply;
   background-origin: content-box;
@@ -33,6 +33,23 @@
   color: #fff;
   h1 {
     font-weight: 800;
+  }
+}
+
+.features {
+  padding: 3rem 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    i {
+      margin-right: 2rem;
+    }
   }
 }
 

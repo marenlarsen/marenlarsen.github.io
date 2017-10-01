@@ -58,7 +58,7 @@ header {
   header + .container {
     margin-top: 10rem; } }
 .hero {
-  background-image: linear-gradient(#ffd966, #ffd966), url("../img/maren_headshot.jpg");
+  background-image: linear-gradient(#ffd966, #a12d26), url("../img/maren_headshot.jpg");
   background-size: cover;
   background-blend-mode: multiply;
   background-origin: content-box;
@@ -85,6 +85,20 @@ header {
   color: #fff; }
   #intro-headings h1 {
     font-weight: 800; }
+
+.features {
+  padding: 3rem 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .features div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    .features div i {
+      margin-right: 2rem; }
 
 /* Media Queries */
 /* Phablet (sm) */
