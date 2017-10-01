@@ -5,7 +5,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 99;
   border-top: 0.4em solid $yellow;
   nav {
     display: -webkit-flex;
@@ -42,11 +42,15 @@ header {
         text-align: center;
         @include hover-state {
           background-color: lighten(#222, 10%);
+          border-bottom: 0.2em solid lighten(#222, 10%);
         }
       }
       .active {
         border-bottom: 0.2em solid $yellow;
         color: $yellow;
+        @include hover-state {
+          border-bottom: 0.2em solid $yellow;
+        }
       }
     }
   }

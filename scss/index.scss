@@ -1,26 +1,81 @@
 @import 'header';
 
-#hero {
+.hero {
+  background-image: linear-gradient($yellow, $yellow), url('../img/maren_headshot.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-origin: content-box;
+  padding-top: 8rem;
+}
+
+#hero-flex {
+  padding: 8rem 0 4rem 0;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  .button {
+    width: 100%;
+  }
 }
 
 #headshot {
-  width: 50%;
-  img {
-    width: 100%;
-    border-radius: 100%;
-    padding: 0.6rem;
-    border: 0.6rem solid $yellow;
-  }
+  display: none;
+}
+
+#hero-text {
+  width: 100%;
 }
 
 #intro-headings {
-  width: 50%;
+  color: #fff;
   h1 {
-    font-size: 3.0rem;
-    text-align: right;
+    font-weight: 800;
   }
+}
+
+/* Media Queries */
+/* Phablet (sm) */
+@media (min-width: 400px) {
+}
+
+/*Tablet (md) */
+@media (min-width: 550px) {
+  #hero-flex {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .button {
+    width: 85%;
+    margin-left: 20px;
+  }
+  #headshot {
+    display: block;
+    width: 50%;
+    img {
+      width: 100%;
+      border-radius: 100%;
+      padding: 0.6rem;
+      border: 0.6rem solid $yellow;
+    }
+  }
+  #hero-text {
+    width: 50%;
+  }
+}
+
+/* Desktop (lg) */
+@media (min-width: 750px) {
+}
+
+/* Desktop HD (xlg) */
+@media (min-width: 1000px) {
+  /* no styles yet */
+}
+
+// Really big (mega) //
+@media (min-width: 1200px) {
+  /* no styles yet */
 }

@@ -5,7 +5,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 99;
   border-top: 0.4em solid #ffd966; }
   header nav {
     display: -webkit-flex;
@@ -37,10 +37,13 @@ header {
         display: block;
         text-align: center; }
         header nav ul a:hover, header nav ul a:active, header nav ul a:focus {
-          background-color: #3c3c3c; }
+          background-color: #3c3c3c;
+          border-bottom: 0.2em solid #3c3c3c; }
       header nav ul .active {
         border-bottom: 0.2em solid #ffd966;
         color: #ffd966; }
+        header nav ul .active:hover, header nav ul .active:active, header nav ul .active:focus {
+          border-bottom: 0.2em solid #ffd966; }
   header + .container {
     margin-top: 15rem; }
 
@@ -54,24 +57,63 @@ header {
       width: auto; }
   header + .container {
     margin-top: 10rem; } }
-#hero {
+.hero {
+  background-image: linear-gradient(#ffd966, #ffd966), url("../img/maren_headshot.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-origin: content-box;
+  padding-top: 8rem; }
+
+#hero-flex {
+  padding: 8rem 0 4rem 0;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  #hero-flex .button {
+    width: 100%; }
 
 #headshot {
-  width: 50%; }
-  #headshot img {
-    width: 100%;
-    border-radius: 100%;
-    padding: 0.6rem;
-    border: 0.6rem solid #ffd966; }
+  display: none; }
+
+#hero-text {
+  width: 100%; }
 
 #intro-headings {
-  width: 50%; }
+  color: #fff; }
   #intro-headings h1 {
-    font-size: 3.0rem;
-    text-align: right; }
+    font-weight: 800; }
+
+/* Media Queries */
+/* Phablet (sm) */
+/*Tablet (md) */
+@media (min-width: 550px) {
+  #hero-flex {
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+
+  .button {
+    width: 85%;
+    margin-left: 20px; }
+
+  #headshot {
+    display: block;
+    width: 50%; }
+    #headshot img {
+      width: 100%;
+      border-radius: 100%;
+      padding: 0.6rem;
+      border: 0.6rem solid #ffd966; }
+
+  #hero-text {
+    width: 50%; } }
+/* Desktop (lg) */
+/* Desktop HD (xlg) */
+@media (min-width: 1000px) {
+  /* no styles yet */ }
+@media (min-width: 1200px) {
+  /* no styles yet */ }
 
 /*# sourceMappingURL=index.css.map */
