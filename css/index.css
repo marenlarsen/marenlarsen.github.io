@@ -83,7 +83,7 @@ footer {
     color: #a12d26; }
 
 .hero {
-  background-image: linear-gradient(#ffd966, #a12d26), url("../img/maren_headshot.jpg");
+  background-image: linear-gradient(#888, #888), url("../img/maren_headshot.jpg");
   background-size: cover;
   background-blend-mode: multiply;
   background-origin: content-box;
