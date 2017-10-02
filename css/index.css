@@ -57,6 +57,31 @@ header {
       width: auto; }
   header + .container {
     margin-top: 10rem; } }
+footer {
+  background: #222;
+  color: #ddd;
+  padding-top: 3.6rem; }
+  footer h5 {
+    font-weight: 600; }
+  footer a {
+    color: #ddd; }
+    footer a:hover, footer a:active, footer a:focus {
+      color: #ffd966; }
+
+#footer-links {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+
+#sitemap ul {
+  list-style-type: square; }
+
+#credits {
+  font-size: 1.2rem; }
+  #credits i {
+    color: #a12d26; }
+
 .hero {
   background-image: linear-gradient(#ffd966, #a12d26), url("../img/maren_headshot.jpg");
   background-size: cover;
