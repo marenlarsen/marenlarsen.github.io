@@ -98,7 +98,8 @@ footer {
   -webkit-align-items: center;
   align-items: center; }
   #hero-flex .button {
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #777; }
 
 #headshot {
   display: none; }
