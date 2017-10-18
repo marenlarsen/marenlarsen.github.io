@@ -148,7 +148,16 @@ footer {
       border: 0.6rem solid #ffd966; }
 
   #hero-text {
-    width: 45%; } }
+    width: 45%; }
+
+  #features {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    #features div {
+      -webkit-flex-basis: 45%;
+      flex-basis: 45%; } }
 /* Desktop (lg) */
 /* Desktop HD (xlg) */
 @media (min-width: 1000px) {

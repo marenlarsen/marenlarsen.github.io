@@ -86,6 +86,17 @@
   #hero-text {
     width: 45%;
   }
+
+  #features {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    div {
+      -webkit-flex-basis: 45%;
+      flex-basis: 45%;
+    }
+  }
 }
 
 /* Desktop (lg) */
