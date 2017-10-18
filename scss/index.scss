@@ -10,7 +10,7 @@
 }
 
 #hero-flex {
-  padding: 8rem 0 4rem 0;
+  padding: 8rem 0 6rem 0;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -62,17 +62,19 @@
 
 /*Tablet (md) */
 @media (min-width: 550px) {
+  #hero {
+    background-image: linear-gradient(#888, #888), url("https://images.unsplash.com/photo-1467049812154-f61d5f252ff0?dpr=1&auto=format&fit=crop&w=1012&h=&q=60&cs=tinysrgb&crop=");
+    padding-top: 6rem;
+  }
+
   #hero-flex {
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
-  .button {
-    width: 85%;
-    margin-left: 20px;
-  }
+
   #headshot {
     display: block;
-    width: 50%;
+    width: 45%;
     img {
       width: 100%;
       border-radius: 100%;
@@ -80,8 +82,20 @@
       border: 0.6rem solid $yellow;
     }
   }
+
   #hero-text {
-    width: 50%;
+    width: 45%;
+  }
+
+  #features {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    div {
+      -webkit-flex-basis: 45%;
+      flex-basis: 45%;
+    }
   }
 }
 
