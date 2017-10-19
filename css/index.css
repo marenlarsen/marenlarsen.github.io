@@ -98,8 +98,8 @@ footer {
       #footer-links #contact ul, #footer-links #sitemap ul {
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
+        -webkit-justify-content: space-evenly;
+        justify-content: space-evenly;
         -webkit-flex-grow: 1;
         flex-grow: 1; } }
 /* Desktop (lg) */
