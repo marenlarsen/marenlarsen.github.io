@@ -87,9 +87,9 @@
     width: 45%;
   }
 
-  #features {
-    -webkit-align-items: center;
-    align-items: center;
+  .features {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
     div {
