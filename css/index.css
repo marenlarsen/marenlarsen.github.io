@@ -74,9 +74,6 @@ footer {
   -webkit-justify-content: space-around;
   justify-content: space-around; }
 
-#sitemap ul {
-  list-style-type: square; }
-
 #credits {
   font-size: 1.0rem;
   text-align: center; }
