@@ -127,7 +127,8 @@ footer {
   align-items: center; }
   #hero-flex .button {
     width: 100%;
-    border: 1px solid #777; }
+    border: 1px solid #ffd966;
+    box-shadow: 2px 2px 0 2px #ffc000; }
 
 #headshot {
   display: none; }

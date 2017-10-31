@@ -119,12 +119,12 @@ input[type="button"] {
     outline: 0; }
 
 .button-primary {
-  color: #fff;
-  background-color: #33c3f0; }
+  color: #444;
+  background-color: #ffd966; }
   .button-primary:hover, .button-primary:active, .button-primary:focus {
     color: #fff;
-    background-color: #0fa0ce;
-    border-color: #0fa0ce; }
+    background-color: #ffc000;
+    border-color: #ffc000; }
 
 /* Forms */
 input[type="email"],
