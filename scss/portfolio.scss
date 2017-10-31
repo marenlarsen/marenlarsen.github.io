@@ -6,10 +6,13 @@ $bluegreen: linear-gradient(#37ecba, #72afd3);
 $greenyellow: linear-gradient(#16a085, #f4d03f);
 
 .catalog {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  // IE & Edge currently need -ms prefix for CSS Grid
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-gap: 10px 10px;
+  grid-gap: 10px 10px;
   margin: 24px 0;
 }
 
@@ -58,6 +61,10 @@ $greenyellow: linear-gradient(#16a085, #f4d03f);
 
 /*Tablet (md) */
 @media (min-width: 550px) {
+  .catalog {
+    -ms-grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Desktop (lg) */

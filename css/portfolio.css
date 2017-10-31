@@ -112,10 +112,12 @@ footer {
   /* no styles yet */ }
 /* Gradients */
 .catalog {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-gap: 10px 10px;
+  grid-gap: 10px 10px;
   margin: 24px 0; }
 
 .card {
@@ -152,6 +154,10 @@ footer {
 /* Media Queries */
 /* Phablet (sm) */
 /*Tablet (md) */
+@media (min-width: 550px) {
+  .catalog {
+    -ms-grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
 /* Desktop (lg) */
 /* Desktop HD (xlg) */
 /* Really big (mega) */
