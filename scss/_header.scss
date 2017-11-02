@@ -40,6 +40,7 @@ header {
       a {
         display: block;
         text-align: center;
+        border-bottom: 0.2em solid #222;
         @include hover-state {
           background-color: lighten(#222, 10%);
           border-bottom: 0.2em solid lighten(#222, 10%);
