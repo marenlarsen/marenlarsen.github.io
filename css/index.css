@@ -60,9 +60,7 @@ header {
 footer {
   background: #222;
   color: #ddd;
-  padding-top: 3.6rem; }
-  footer h5 {
-    font-weight: 600; }
+  padding-top: 2.0rem; }
   footer a {
     color: #ddd; }
     footer a:hover, footer a:active, footer a:focus {
@@ -71,8 +69,21 @@ footer {
 #footer-links {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
   -webkit-justify-content: space-around;
   justify-content: space-around; }
+  #footer-links .button {
+    margin-bottom: 2.0rem; }
+  #footer-links ul {
+    list-style: none;
+    margin-bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly; }
+    #footer-links ul li {
+      display: inline; }
 
 #credits {
   font-size: 1.0rem;
