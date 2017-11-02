@@ -19,6 +19,9 @@ footer {
   justify-content: space-around;
   .button {
     margin-bottom: 2.0rem;
+    width: 100%;
+    border: 1px solid $yellow;
+    box-shadow: 2px 2px 0 2px $yellow-dk;
   }
   ul {
     list-style: none;
