@@ -116,10 +116,12 @@ input[type="button"] {
 .button-primary {
   color: #444;
   background-color: $yellow;
+  border: none;
+  box-shadow: 2px 2px 0 2px $yellow-dk;
   @include hover-state {
-    color: #fff;
+    color: #444;
     background-color: $yellow-dk;
-    border-color: $yellow-dk;
+    box-shadow: 2px 2px 0 2px $yellow;
   }
 }
 

@@ -120,11 +120,13 @@ input[type="button"] {
 
 .button-primary {
   color: #444;
-  background-color: #ffd966; }
+  background-color: #ffd966;
+  border: none;
+  box-shadow: 2px 2px 0 2px #ffc000; }
   .button-primary:hover, .button-primary:active, .button-primary:focus {
-    color: #fff;
+    color: #444;
     background-color: #ffc000;
-    border-color: #ffc000; }
+    box-shadow: 2px 2px 0 2px #ffd966; }
 
 /* Forms */
 input[type="email"],

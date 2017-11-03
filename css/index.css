@@ -76,9 +76,7 @@ footer {
   justify-content: space-around; }
   #footer-links .button {
     margin-bottom: 2.0rem;
-    width: 100%;
-    border: 1px solid #ffd966;
-    box-shadow: 2px 2px 0 2px #ffc000; }
+    width: 100%; }
   #footer-links ul {
     list-style: none;
     margin-bottom: 0;
@@ -141,9 +139,7 @@ footer {
   -webkit-align-items: center;
   align-items: center; }
   #hero-flex .button {
-    width: 100%;
-    border: 1px solid #ffd966;
-    box-shadow: 2px 2px 0 2px #ffc000; }
+    width: 100%; }
 
 #headshot {
   display: none; }
