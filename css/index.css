@@ -66,6 +66,15 @@ footer {
     color: #ddd; }
     footer a:hover, footer a:active, footer a:focus {
       color: #ffd966; }
+  footer .container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column; }
+
+.button {
+  margin-bottom: 2.0rem;
+  width: 100%; }
 
 #footer-links {
   display: -webkit-flex;
@@ -74,9 +83,6 @@ footer {
   flex-flow: column;
   -webkit-justify-content: space-around;
   justify-content: space-around; }
-  #footer-links .button {
-    margin-bottom: 2.0rem;
-    width: 100%; }
   #footer-links ul {
     list-style: none;
     margin-bottom: 0;
@@ -95,34 +101,29 @@ footer {
 
 /* Media Queries */
 /* Phablet (sm) */
-@media (min-width: 400px) {
-  /* no styles yet */ }
 /*Tablet (md) */
 @media (min-width: 550px) {
+  footer .container {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    footer .container .button {
+      flex-grow: 1;
+      max-width: 50%; }
+
   #footer-links {
-    -webkit-flex-direction: column;
-    flex-direction: column; }
+    flex-grow: 1; }
     #footer-links #contact, #footer-links #sitemap {
-      display: -webkit-flex;
-      display: flex; }
-      #footer-links #contact h5, #footer-links #sitemap h5 {
-        -webkit-flex-basis: 25%;
-        flex-basis: 25%; }
-      #footer-links #contact ul, #footer-links #sitemap ul {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-evenly;
-        justify-content: space-evenly;
-        -webkit-flex-grow: 1;
-        flex-grow: 1; } }
+      width: 100%; } }
 /* Desktop (lg) */
 @media (min-width: 750px) {
-  /* no styles yet */ }
+  #footer-links {
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: space-around;
+    justify-content: space-around; } }
 /* Desktop HD (xlg) */
-@media (min-width: 1000px) {
-  /* no styles yet */ }
-@media (min-width: 1200px) {
-  /* no styles yet */ }
 .hero {
   background-image: linear-gradient(#888, #888), url("../img/maren_headshot.jpg");
   background-size: cover;
