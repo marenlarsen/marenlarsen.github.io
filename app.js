@@ -5,7 +5,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", function(req, res) {
-    res.send("Hello");
+    res.render("home");
 });
 
 app.listen(process.env.PORT || 3000, function() {
