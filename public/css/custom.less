@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,800");
-
 // COLORS //
 @primaryColor   : hsl(45, 0%, 70%); //#ffd966
 @secondaryColor : hsl(194, 0%, 49%); //#1eaedb
@@ -8,7 +6,15 @@
 @black          : hsl(0, 0%, 13%); //#222
 @white          : hsl(0, 0%, 100%); //#fff
 
-#override {
+.fontOverride {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#override body {
+    font-weight: 400;
+    color: @black;
+    min-height: 100vh;
+
     header {
         border-top: 0.3rem solid @primaryColor;
 
@@ -24,6 +30,45 @@
 
                 &.active {
                     border-bottom-color: @primaryColor;
+                }
+            }
+        }
+    }
+
+    .hero {
+        background-image: linear-gradient(#888, #888), url("../img/maren_headshot.jpg");
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-origin: padding-box;
+        background-position: center;
+
+        #hero-flex {
+            padding: 10rem 0 10rem 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            #headshot {
+                display: none;
+            }
+
+            #hero-text {
+                width: 80%;
+
+                #intro-headings {
+                    h1 {
+                        font-weight: 800;
+                        color: @white;
+                        font-size: 3rem;
+                    }
+                }
+
+                button {
+                    background-color: @primaryColor;
+                    margin-top: 1.5rem;
                 }
             }
         }
