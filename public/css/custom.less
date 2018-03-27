@@ -3,6 +3,7 @@
 @secondaryColor : hsl(194, 0%, 49%); //#1eaedb
 @primaryDark    : darken(@primaryColor, 20%);
 @secondaryDark  : darken(@secondaryColor, 20%);
+@heartRed       : hsl(3, 0%, 39%); //#a12d26
 @black          : hsl(0, 0%, 13%); //#222
 @white          : hsl(0, 0%, 100%); //#fff
 
@@ -65,12 +66,41 @@
                         font-size: 3rem;
                     }
                 }
-
-                button {
-                    background-color: @primaryColor;
-                    margin-top: 1.5rem;
-                }
             }
         }
+    }
+
+    footer {
+        background-color: @black;
+        color: @white;
+        margin-top: 1.5rem;
+        
+        & > div {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-align-content: center;
+            align-content: center;
+        }
+
+        a {
+            color: @white;
+        }
+        
+        #credits {
+            font-size: 0.7rem;
+            margin: 1.0rem 0;
+        }
+    }
+
+    button {
+        background-color: @primaryColor;
+        margin: 1.5rem 0;
+        width: 100%;
     }
 }
